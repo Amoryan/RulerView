@@ -182,9 +182,13 @@ public final class RulerView extends View {
     private void drawLine(Canvas canvas) {
         canvas.save();
         canvas.translate(-leftOffset, 0);
-        int cx = getWidth() / 2;
-        int startX = cx;
+        int startX = getWidth() / 2;
         for (int i = 0; i < lineCount; i++) {
+            if (startX < leftOffset) {
+                //只绘制在屏幕中的部分
+                startX = startX + (int) (strokeWidth + scaleWidth + 0.5f);
+                continue;
+            }
             if (i % largeScaleInterval == 0) {
                 String text = String.valueOf(minValue + i * scaleValue);
                 float width = textPaint.measureText(text);
