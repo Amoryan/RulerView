@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RulerView">
+        <!--刻度线的颜色-->
+        <attr name="scaleLineColor" format="color"/>
+        <!--大刻度的高度-->
+        <attr name="largeScaleHeight" format="dimension"/>
+        <!--小刻度的高度-->
+        <attr name="minScaleHeight" format="dimension"/>
+        <!--刻度的间隔宽度-->
+        <attr name="scaleWidth" format="dimension"/>
+
+        <!--刻度宽度-->
+        <attr name="strokeWidth" format="dimension"/>
+
+        <!--最大刻度-->
+        <attr name="maxValue" format="integer"/>
+        <!--最小刻度-->
+        <attr name="minValue" format="integer"/>
+        <!--每个刻度占比-->
+        <attr name="scaleValue" format="integer"/>
+        <!--大刻度之间的小刻度数量-->
+        <attr name="largeScaleInterval" format="integer"/>
+
+        <!--大刻度文本大小-->
+        <attr name="largeScaleTextSize" format="dimension"/>
+        <!--大刻度文本的颜色-->
+        <attr name="largeScaleTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>
